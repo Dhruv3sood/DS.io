@@ -1,190 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Metadata of the Webpage -->
-    <!-- Character-set Metadata -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- Viewport Metadata -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Description Metadata-->
-    <meta name="description" content="Portfolio Website" />
-    <!-- Author Metadata -->
-    <meta name="author" content="Dhruv Sood" />
-    <!-- Keyword Metadata -->
-    <meta
-      name="keywords"
-      content="Dhruv Sood, Dhruv Sood DPS,
-        Dhruv Sood DPSRKP, Dhruv Sood IIITD, Dhruv Sood Indraprastha Institute of Information Technology, Dhruv Sood New Delhi, Dhruv Sood dps noida, 
-        Dhruv Sood DPS NOIDA, Dhruv Sood NSE,
-        Dhruv Sood, Dhruv Sood Website,dhruv sood iiitd, dhruv sood dps rkp, dhruv sood dps noida"
-    />
-    <!-- Webpage Logo -->
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
-    <!-- Webpage Title -->
-    <title>Dhruv Sood</title>
+<head>
+  <!-- Metadata of the Webpage -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio Website" />
+  <meta name="author" content="Dhruv Sood" />
+  <meta name="keywords" content="Dhruv Sood, Dhruv Sood DPS, Dhruv Sood DPSRKP, Dhruv Sood IIITD, Dhruv Sood Indraprastha Institute of Information Technology, Dhruv Sood New Delhi, Dhruv Sood dps noida, Dhruv Sood DPS NOIDA, Dhruv Sood NSE, Dhruv Sood, Dhruv Sood Website, dhruv sood iiitd, dhruv sood dps rkp, dhruv sood dps noida" />
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+  <title>Dhruv Sood</title>
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <style>
+    .cloud-container {
+      position: fixed;
+      top: 20px;
+      right: -320px;
+      width: 300px;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      border-radius: 30px;
+      padding: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: floatIn 8s ease-in-out infinite;
+      transform-origin: center right;
+    }
 
-    <!-- Import CSS: Main Stylesheet -->
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <!-- Include Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Include Devicon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <!-- Additional CSS for Cloud Animation -->
-    <style>
-      .cloud-container {
-        position: fixed;
-        top: 20px;
+    .cloud-text {
+      font-size: 18px;
+      color: #333;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      opacity: 0;
+      animation: fadeIn 2s ease-in-out 1s forwards;
+    }
+
+    .cloud-text strong {
+      display: block;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .cloud-text-item {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    @keyframes floatIn {
+      0%, 100% {
+        transform: translateX(0) rotate(0deg);
         right: -320px;
-        width: 300px;
-        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-        border-radius: 30px;
-        padding: 20px;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        animation: floatIn 8s ease-in-out infinite;
-        transform-origin: center right;
       }
+      50% {
+        transform: translateX(-340px) rotate(-2deg);
+        right: 20px;
+      }
+    }
 
-      .cloud-text {
-        font-size: 18px;
-        color: #333;
-        font-family: 'Arial', sans-serif;
-        text-align: center;
+    @keyframes fadeIn {
+      0% {
         opacity: 0;
-        animation: fadeIn 2s ease-in-out 1s forwards;
       }
-
-      @keyframes floatIn {
-        0%, 100% {
-          transform: translateX(0) rotate(0deg);
-          right: -320px;
-        }
-        50% {
-          transform: translateX(-340px) rotate(-2deg);
-          right: 20px;
-        }
+      100% {
+        opacity: 1;
       }
-
-      @keyframes fadeIn {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="particles-js">
-      <div class="header">
-        <h1>
-          <span class="site-title">Dhruv Sood</span>
-          <span class="site-description">CS senior @IIITD</span>
-        </h1>
-        <div class="header-icons">
-          <a aria-label="My LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/dhruvsood3/">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a aria-label="My Github Profile" target="_blank" href="https://github.com/Dhruv3sood">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a aria-label="My Résumé" target="_blank" href="https://docs.google.com/document/d/1G0Jdc1VKbZoTO0cToUPyAOElGV-y470_jos94sOxeJo/edit?usp=sharing">
-            <i class="icon fa fa fa-file-pdf-o" aria-hidden="true"></i>
-          </a>
-          <a aria-label="Send Email" href="mailto: dhruv21387@iiitd.ac.in" target="_blank">
-            <i class="icon fa fa-envelope"></i>
-          </a>
-        </div>
-        <div class="header-links">
-          <a class="link" href="#about" data-scroll>About Me</a>
-          <a class="link" href="#projects" data-scroll>Projects</a>
-        </div>
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js">
+    <div class="header">
+      <h1>
+        <span class="site-title">Dhruv Sood</span>
+        <span class="site-description">CS senior @IIITD</span>
+      </h1>
+      <div class="header-icons">
+        <a aria-label="My LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/dhruvsood3/">
+          <i class="fa-brands fa-linkedin fa-2x"></i>
+        </a>
+        <a aria-label="My Github Profile" target="_blank" href="https://github.com/Dhruv3sood">
+          <i class="fa-brands fa-github fa-2x"></i>
+        </a>
+        <a aria-label="My Résumé" target="_blank" href="https://docs.google.com/document/d/1G0Jdc1VKbZoTO0cToUPyAOElGV-y470_jos94sOxeJo/edit?usp=sharing">
+          <i class="fa-solid fa-file-pdf fa-2x"></i>
+        </a>
+        <a aria-label="Send Email" href="mailto: dhruv21387@iiitd.ac.in" target="_blank">
+          <i class="fa-solid fa-envelope fa-2x"></i>
+        </a>
       </div>
-      <a class="down" href="#about" data-scroll>
-        <i class="fas fa-angles-down fa-bounce" aria-hidden="true"></i>
-      </a>
+      <div class="header-links">
+        <a class="link" href="#about" data-scroll>About Me</a>
+        <a class="link" href="#projects" data-scroll>Projects</a>
+      </div>
+    </div>
+    <a class="down" href="#about" data-scroll>
+      <i class="fas fa-angles-down fa-bounce" aria-hidden="true"></i>
+    </a>
+  </div>
+
+  <!-- Cloud Animation Container -->
+  <div class="cloud-container">
+    <p class="cloud-text">
+      <strong>#opentowork</strong><br>
+      <span class="cloud-text-item">• Available for Full-time from May 2025 onwards</span><br>
+      <span class="cloud-text-item">• Available for 6-month internship from December 2024 onwards</span>
+    </p>
+  </div>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="user-details">
+      <h1>My Story</h1>
+      <picture>
+        <source
+          type="image/webp"
+          srcset="./assets/img/webp/Professional-Picture-M.webp"
+          alt="Professional Me"
+          width="20%"
+          style="border-radius: 50%"
+        />
+        <img
+          src="./assets/img/jpg/Professional-Picture-Me.jpeg"
+          alt="Professional Me"
+          width="20%"
+          style="border-radius: 50%"
+        />
+      </picture>
+      <p>
+        Aspiring to work in a challenging and dynamic environment where I can utilize my technical acumen and problem-solving skills to drive impactful projects. Eager to contribute to a forward-thinking organization that values innovation, efficiency, and continuous learning. Looking for opportunities that align with my background in software development, data analysis, and automation to help streamline processes and enhance operational capabilities.
+      </p>
     </div>
 
-    <!-- Cloud Animation Container -->
-    <div class="cloud-container">
-      <p class="cloud-text">#opentowork<br>1. Available for Full time from May 2025 onwards<br>Available for 6 months intern from December 2024 onwards</p>
+    <div class="user">
+      <div class="tech">
+        <i class="devicon-python-plain colored"></i>
+        <i class="devicon-java-plain-wordmark colored"></i>
+        <i class="devicon-cplusplus-plain colored"></i>
+        <i class="devicon-mysql-plain-wordmark"></i>
+        <i class="devicon-jira-plain-wordmark"></i>
+      </div>
+
+      <div class="tech">
+        <i class="devicon-git-plain-wordmark colored"></i>
+        <i class="devicon-github-plain-wordmark colored"></i>
+        <i class="devicon-visualstudio-plain colored"></i>
+        <i class="devicon-linux-plain"></i>
+        <i class="devicon-latex-original"></i>
+        <i class="devicon-r-plain colored"></i>
+      </div>
+      <div>
+        <i class="devicon-scikitlearn-plain"></i>
+        <i class="devicon-numpy-plain"></i>
+        <i class="devicon-pandas-plain"></i>
+        <i class="devicon-jupyter-plain-wordmark colored"></i>
+        <i class="devicon-ssh-original colored"></i>
+        <i class="devicon-figma-plain"></i>
+        <i class="devicon-rstudio-plain colored"></i>
+        <i class="devicon-selenium-original colored"></i>
+        <i class="devicon-arduino-plain colored"></i>
+        <i class="devicon-streamlit-plain-wordmark"></i>
+      </div>
     </div>
+  </section>
 
-    <!-- About Section -->
-    <section id="about">
-      <!-- User Introduction-->
-      <div class="user-details">
-        <h1>My Story</h1>
-        <picture>
-          <source
-            type="image/webp"
-            srcset="./assets/img/webp/Professional-Picture-Me.webp"
-            alt="Professional Me"
-            width="20%"
-            style="border-radius: 50%"
-          />
-          <img
-            src="./assets/img/jpg/Professional-Picture-Me.jpeg"
-            alt="Professional Me"
-            width="20%"
-            style="border-radius: 50%"
-          />
-        </picture>
-        <p>
-          Aspiring to work in a challenging and dynamic environment where I can utilize my technical acumen and problem-solving skills to drive impactful projects. Eager to contribute to a forward-thinking organization that values innovation, efficiency, and continuous learning. Looking for opportunities that align with my background in software development, data analysis, and automation to help streamline processes and enhance operational capabilities.
-        </p>
-      </div>
+  <footer class="footer">
+    <p>&copy; Dhruv Sood</p>
+  </footer>
 
-      <!-- User Specifics -->
-      <div class="user">
-        <!-- Technology Stack #1: Languages -->
-        <div class="tech">
-          <i class="devicon-python-plain colored"></i>
-          <i class="devicon-java-plain-wordmark colored"></i>
-          <i class="devicon-cplusplus-plain colored"></i>
-          <i class="devicon-mysql-plain-wordmark"></i>
-        </div>
-
-        <!-- Technology Stack #4: Tools -->
-        <div class="tech">
-          <i class="devicon-git-plain-wordmark colored"></i>
-          <i class="devicon-github-plain-wordmark colored"></i>
-          <i class="devicon-visualstudio-plain colored"></i>
-          <i class="devicon-linux-plain"></i>
-          <i class="devicon-latex-original"></i>
-          <i class="devicon-r-plain colored"></i>
-          <i class="devicon-jira-plain-wordmark"></i>
-        </div>
-        <div>
-          <i class="devicon-scikitlearn-plain"></i>
-          <i class="devicon-numpy-plain"></i>
-          <i class="devicon-pandas-plain"></i>
-          <i class="devicon-jupyter-plain-wordmark colored"></i>
-          <i class="devicon-ssh-original colored"></i>
-          <i class="devicon-figma-plain"></i>
-          <i class="devicon-rstudio-plain colored"></i>
-          <i class="devicon-selenium-original colored"></i>
-          <i class="devicon-arduino-plain colored"></i>
-          <i class="devicon-streamlit-plain-wordmark"></i>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <p>&copy; Dhruv Sood</p>
-    </footer>
-
-    <!-- Import JS: Particles Theme -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <!-- Import JS: Sweet Scroll -->
-    <script src="./assets/js/sweet-scroll.min.js"></script>
-    <!-- Import JS: Google Analytics -->
-    <script src="./assets/js/google-analytics.js"></script>
-    <!-- Import JS: Main Script -->
-    <script src="./assets/js/main.js"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="./assets/js/sweet-scroll.min.js"></script>
+  <script src="./assets/js/google-analytics.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
 </html>
