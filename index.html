@@ -27,62 +27,56 @@
     <!-- Import CSS: Main Stylesheet -->
     <link rel="stylesheet" href="./assets/css/main.css" />
     <!-- Include Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Include Devicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <!-- Additional CSS for Cloud Animation -->
     <style>
       .cloud-container {
-  position: fixed;
-  top: 20px;
-  right: -320px;
-  width: 300px;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  border-radius: 30px;
-  padding: 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: floatIn 8s ease-in-out infinite;
-  transform-origin: center right;
-}
+        position: fixed;
+        top: 20px;
+        right: -320px;
+        width: 300px;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        border-radius: 30px;
+        padding: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: floatIn 8s ease-in-out infinite;
+        transform-origin: center right;
+      }
 
-.cloud-text {
-  font-size: 18px;
-  color: #333;
-  font-family: 'Arial', sans-serif;
-  text-align: center;
-  opacity: 0;
-  animation: fadeIn 2s ease-in-out 1s forwards;
-}
+      .cloud-text {
+        font-size: 18px;
+        color: #333;
+        font-family: 'Arial', sans-serif;
+        text-align: center;
+        opacity: 0;
+        animation: fadeIn 2s ease-in-out 1s forwards;
+      }
 
-@keyframes floatIn {
-  0%, 100% {
-    transform: translateX(0) rotate(0deg);
-    right: -320px;
-  }
-  50% {
-    transform: translateX(-340px) rotate(-2deg);
-    right: 20px;
-  }
-}
+      @keyframes floatIn {
+        0%, 100% {
+          transform: translateX(0) rotate(0deg);
+          right: -320px;
+        }
+        50% {
+          transform: translateX(-340px) rotate(-2deg);
+          right: 20px;
+        }
+      }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
     </style>
-  </head>
-    <!-- Webpage Logo -->
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
-    <!-- Webpage Title -->
-    <title>Dhruv Sood</title>
-
-    <!-- Import CSS: Main Stylesheet -->
-    <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
     <div id="particles-js">
@@ -111,13 +105,13 @@
         </div>
       </div>
       <a class="down" href="#about" data-scroll>
-        <i class="fa-regular fa-angles-down fa-bounce" aria-hidden="true"></i>
+        <i class="fas fa-angles-down fa-bounce" aria-hidden="true"></i>
       </a>
     </div>
 
     <!-- Cloud Animation Container -->
     <div class="cloud-container">
-      <p class="cloud-text">#opentowork<br>Available for FT May 2025 onwards<br>6 months intern December 2024 onwards</p>
+      <p class="cloud-text">#opentowork<br>1. Available for Full time from May 2025 onwards<br>Available for 6 months intern from December 2024 onwards</p>
     </div>
 
     <!-- About Section -->
@@ -142,7 +136,6 @@
         </picture>
         <p>
           Aspiring to work in a challenging and dynamic environment where I can utilize my technical acumen and problem-solving skills to drive impactful projects. Eager to contribute to a forward-thinking organization that values innovation, efficiency, and continuous learning. Looking for opportunities that align with my background in software development, data analysis, and automation to help streamline processes and enhance operational capabilities.
-
         </p>
       </div>
 
@@ -164,7 +157,7 @@
           <i class="devicon-github-plain-wordmark colored"></i>
           <i class="devicon-visualstudio-plain colored"></i>
           <i class="devicon-linux-plain"></i>
-          </div>
+        </div>
         <div>
           <i class="devicon-scikitlearn-plain"></i>
           <i class="devicon-numpy-plain"></i>
@@ -179,7 +172,6 @@
         </div>
       </div>
     </section>
-
 
     <footer class="footer">
       <p>&copy; Dhruv Sood</p>
