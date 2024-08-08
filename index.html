@@ -19,20 +19,20 @@
       top: 20px;
       right: -320px;
       width: 300px;
-      background: linear-gradient(135deg, #f5f4fa 0%, #c3cfe2 100%);
-      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      background: #ffffff;
+      border-radius: 10px;
       padding: 20px;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
       display: flex;
       justify-content: center;
       align-items: center;
-      animation: floatIn 8s ease-in-out infinite;
+      animation: floatIn 12s ease-in-out infinite;
       transform-origin: center right;
     }
 
     .cloud-text {
       font-size: 18px;
-      color: #fff; /* White text color */
+      color: #333;
       font-family: 'Arial', sans-serif;
       text-align: center;
       opacity: 0;
@@ -47,13 +47,13 @@
 
     .cloud-text-item {
       display: block;
-      margin-bottom: 10px; /* Increase spacing between lines */
+      margin-bottom: 10px;
     }
 
     .cloud-container i {
-      font-size: 36px; /* Increase icon size */
-      color: #000; /* White color for icons */
-      margin: 0 15px; /* Add horizontal spacing between icons */
+      font-size: 36px;
+      color: #000;
+      margin: 0 15px;
     }
 
     @keyframes floatIn {
@@ -75,6 +75,11 @@
         opacity: 1;
       }
     }
+
+    .header-icons i {
+      font-size: 2rem;
+      margin: 0 10px;
+    }
   </style>
 </head>
 <body>
@@ -86,19 +91,18 @@
       </h1>
       <div class="header-icons">
         <a aria-label="My LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/dhruvsood3/">
-          <i class="fa-brands fa-linkedin fa-lg" style="color: #74C0FC;"></i>
+          <i class="fa-brands fa-linkedin fa-2xl" style="color: #74C0FC;"></i>
         </a>
         <a aria-label="My Github Profile" target="_blank" href="https://github.com/Dhruv3sood">
-          <i class="fa-brands fa-github fa-lg" style="color: #74C0FC;"></i>
+          <i class="fa-brands fa-github fa-2xl" style="color: #74C0FC;"></i>
         </a>
         <a aria-label="My Résumé" target="_blank" href="https://docs.google.com/document/d/1G0Jdc1VKbZoTO0cToUPyAOElGV-y470_jos94sOxeJo/edit?usp=sharing">
-          <i class="fa-solid fa-file-pdf fa-lg" style="color: #74C0FC;"></i>
+          <i class="fa-solid fa-file-pdf fa-2xl" style="color: #74C0FC;"></i>
         </a>
         <a aria-label="Send Email" href="mailto: dhruv21387@iiitd.ac.in" target="_blank">
-          <i class="fa-solid fa-envelope fa-lg" style="color: #74C0FC;"></i>
+          <i class="fa-solid fa-envelope fa-2xl" style="color: #74C0FC;"></i>
         </a>
       </div>
-
     </div>
     <a class="down" href="#about" data-scroll>
       <i class="fas fa-angles-down fa-bounce" aria-hidden="true"></i>
@@ -144,7 +148,7 @@
         <i class="devicon-java-plain-wordmark colored"></i>
         <i class="devicon-cplusplus-plain colored"></i>
         <i class="devicon-mysql-plain-wordmark"></i>
-        <i class="devicon-jira-plain-wordmark"></i>
+        
       </div>
 
       <div class="tech">
@@ -153,7 +157,7 @@
         <i class="devicon-visualstudio-plain colored"></i>
         <i class="devicon-linux-plain"></i>
         <i class="devicon-latex-original"></i>
-        <i class="devicon-r-plain colored"></i>
+        <i class="devicon-jira-plain-wordmark"></i>
       </div>
       <div>
         <i class="devicon-scikitlearn-plain"></i>
