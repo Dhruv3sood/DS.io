@@ -31,33 +31,49 @@
     <!-- Additional CSS for Cloud Animation -->
     <style>
       .cloud-container {
-        position: fixed;
-        top: 20px;
-        right: -300px;
-        width: 300px;
-        background: #fff;
-        border-radius: 50px;
-        padding: 20px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        animation: slideIn 5s ease-in-out infinite alternate;
-      }
+  position: fixed;
+  top: 20px;
+  right: -320px;
+  width: 300px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: floatIn 8s ease-in-out infinite;
+  transform-origin: center right;
+}
 
-      .cloud-text {
-        font-size: 18px;
-        color: #333;
-      }
+.cloud-text {
+  font-size: 18px;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out 1s forwards;
+}
 
-      @keyframes slideIn {
-        0% {
-          right: -300px;
-        }
-        100% {
-          right: 20px;
-        }
-      }
+@keyframes floatIn {
+  0%, 100% {
+    transform: translateX(0) rotate(0deg);
+    right: -320px;
+  }
+  50% {
+    transform: translateX(-340px) rotate(-2deg);
+    right: 20px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
     </style>
   </head>
     <!-- Webpage Logo -->
@@ -148,6 +164,8 @@
           <i class="devicon-github-plain-wordmark colored"></i>
           <i class="devicon-visualstudio-plain colored"></i>
           <i class="devicon-linux-plain"></i>
+          </div>
+        <div>
           <i class="devicon-scikitlearn-plain"></i>
           <i class="devicon-numpy-plain"></i>
           <i class="devicon-pandas-plain"></i>
