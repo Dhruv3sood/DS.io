@@ -20,7 +20,7 @@
       right: -320px;
       width: 300px;
       background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-      border-radius: 30px;
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
       padding: 20px;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
       display: flex;
@@ -32,7 +32,7 @@
 
     .cloud-text {
       font-size: 18px;
-      color: #333;
+      color: #fff; /* White text color */
       font-family: 'Arial', sans-serif;
       text-align: center;
       opacity: 0;
@@ -41,13 +41,19 @@
 
     .cloud-text strong {
       display: block;
-      font-size: 20px;
+      font-size: 22px;
       margin-bottom: 10px;
     }
 
     .cloud-text-item {
       display: block;
-      margin-bottom: 5px;
+      margin-bottom: 10px; /* Increase spacing between lines */
+    }
+
+    .cloud-container i {
+      font-size: 36px; /* Increase icon size */
+      color: #fff; /* White color for icons */
+      margin: 0 15px; /* Add horizontal spacing between icons */
     }
 
     @keyframes floatIn {
