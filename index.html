@@ -14,6 +14,24 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <style>
+    @keyframes vibrate {
+      0%, 100% {
+        transform: translate(0);
+      }
+      20% {
+        transform: translate(-1px, -1px);
+      }
+      40% {
+        transform: translate(1px, 1px);
+      }
+      60% {
+        transform: translate(-1px, 1px);
+      }
+      80% {
+        transform: translate(1px, -1px);
+      }
+    }
+
     .cloud-container {
       position: fixed;
       top: 20px;
@@ -26,7 +44,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      animation: vibrate 1.3s infinite;
+      animation: vibrate 2s infinite; /* Slow down the duration */
     }
 
     .cloud-text {
@@ -52,21 +70,6 @@
       font-size: 36px;
       color: #000;
       margin: 0 15px;
-    }
-
-    @keyframes vibrate {
-      0%, 100% {
-        transform: translate(0);
-      }
-      25% {
-        transform: translate(-1px, -1px);
-      }
-      50% {
-        transform: translate(1px, 1px);
-      }
-      75% {
-        transform: translate(-1px, 1px);
-      }
     }
 
     .header-icons i {
@@ -141,7 +144,6 @@
         <i class="devicon-java-plain-wordmark colored"></i>
         <i class="devicon-cplusplus-plain colored"></i>
         <i class="devicon-mysql-plain-wordmark"></i>
-        
       </div>
 
       <div class="tech">
