@@ -58,7 +58,7 @@ This repository contains a pipeline for video tracklet extraction and vehicle re
 ### 6. Extract and Store Matched Images
 
 - **Description:** Extracts matched images based on the CSV results and stores them in a designated folder.
-- **Output:** Matched images stored in `app/data/blank/images`
+- **Output:** Matched images stored in `app/ data/blank/images`
 - **Script:** `main.py`
 
 ## File Structure
